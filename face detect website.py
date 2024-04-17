@@ -17,7 +17,7 @@ model = model_from_json(loaded_model_json)
 model.load_weights("model_weights.h5")
 
 face_haar_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')  
-emotions = ('angry', 'disgust', 'fear', 'happy', 'sad', 'surprise', 'neutral')
+emotions = ('angry', 'fear', 'happy', 'sad', 'surprise', 'neutral')
     
 def video():
     cap=cv2.VideoCapture(0)
